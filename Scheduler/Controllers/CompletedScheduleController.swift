@@ -15,6 +15,8 @@ class CompletedScheduleController: UIViewController {
       // code here
     }
   }
+    
+    public var dataPersistence: DataPersistence<Event>!
   
   @IBOutlet weak var tableView: UITableView!
   

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qGa-aA-0QQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qGa-aA-0QQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -60,7 +60,7 @@
         <!--Schedule-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ScheduleListController" customModule="Scheduler" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScheduleListController" id="BYZ-38-t0r" customClass="ScheduleListController" customModule="Scheduler" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,7 +128,7 @@
         <!--Recently Completed-->
         <scene sceneID="t5Q-F0-3MQ">
             <objects>
-                <viewController id="MBb-oG-RV7" customClass="CompletedScheduleController" customModule="Scheduler" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CompletedScheduleController" id="MBb-oG-RV7" customClass="CompletedScheduleController" customModule="Scheduler" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qus-pG-jRu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -185,7 +185,7 @@
         <!--Schedule-->
         <scene sceneID="2cj-Ld-ler">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wb5-Pl-S6p" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ScheduleNavController" automaticallyAdjustsScrollViewInsets="NO" id="Wb5-Pl-S6p" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Schedule" image="calendar" catalog="system" id="9A4-x2-1uT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="DcT-ao-UY1">
@@ -201,10 +201,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
         </scene>
-        <!--Scheduler Tab Controller-->
+        <!--Schedules Tab Controller-->
         <scene sceneID="rS4-bV-oCS">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qGa-aA-0QQ" customClass="SchedulerTabController" customModule="Scheduler" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="SchedulerTabController" automaticallyAdjustsScrollViewInsets="NO" id="qGa-aA-0QQ" customClass="SchedulesTabController" customModule="Scheduler" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mmE-Ig-AdC">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -223,7 +223,7 @@
         <!--Completed-->
         <scene sceneID="IPp-UE-G7O">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RDY-Vp-ifh" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="CompletedNavController" automaticallyAdjustsScrollViewInsets="NO" id="RDY-Vp-ifh" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Completed" image="text.badge.checkmark" catalog="system" id="qGH-uQ-STT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Z84-QJ-Pei">
