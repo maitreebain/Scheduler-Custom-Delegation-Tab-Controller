@@ -30,7 +30,8 @@ class SchedulesTabController: UITabBarController {
                 fatalError("could not load nav controller")
         }
         completedController.dataPersistence = dataPersistence
-        
+        // step 4: custom delegation - set delegate object
+        completedController.dataPersistence.delegate = completedController
         return navController
     }()
     
