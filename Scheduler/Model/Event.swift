@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Event: Codable & Equatable {
+struct Event: Codable & Equatable{
   let identifier = UUID().uuidString
   var date: Date
   var name: String
